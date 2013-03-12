@@ -1,0 +1,26 @@
+= content_for :style do
+	= stylesheet_link_tag :partner, :media => 'screen'
+
+= content_for :promo do
+	.promo.paragraph.gray
+		%ul.padding-left.small
+			%li.promo_title.text-color-title
+				ПАРТНЕРАМ
+			%li.promo_content.text-color-content
+				Мы можем работать совместно и взаимовыгодно.
+
+= image_tag(partner_banner_path, :alt => "QuickTouch")
+
+.block_1.text-color-content
+	= image_tag("lizzard_icon.png", :alt => "QuickTouch")
+	ГАРАНТИРУЕМ КАЧЕСТВО ВЫПОЛНЕННЫХ РАБОТ
+.block_2.text-color-title
+	ВЫ МОЖЕТЕ НАЧАТЬ ЗАРАБАТЫВАТЬ ВМЕСТЕ С НАМИ
+.block_3.text-color-content
+	%p
+		Будем рады сотрудничать!
+	%p
+		С уважением,
+		%br
+		Малахов Д.И. Операционный директор QuickTouch LLC
+

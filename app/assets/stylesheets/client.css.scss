@@ -1,0 +1,50 @@
+@import "compass";
+
+.wrapper {
+	.content {
+		padding: 0em 5em 0em 5em;
+		table {
+			width: 100%;
+			padding-top: 1em;
+			ul {
+				list-style: none;
+
+				li {
+					padding: 1em;
+					background: #f2f2f2;
+					margin: 0.5em 0em 0em 0em;
+					padding: 1em;
+				}
+			}
+		}
+		.products {
+			.title {
+				background: #3cb53a;
+				color: white;
+				text-align: center;
+				padding: 1em;
+				margin: 4em 0em 1em 0em;
+			}
+			.container {
+				margin: 0 auto;
+				text-align: center;
+				height: 30%;
+				width: 100%;
+
+				@include background-image(linear-gradient(top,
+						rgba(0,0,0,0.4) 0%,
+						rgba(143,143,143,0.3) 56%,
+						rgba(255,255,255,0) 100%));
+
+				.item {
+					@include inline-block();
+					padding-top: 2em;
+
+					img {
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+@import "compass";
+
+.wrapper {
+	.content {
+		padding: 2em 5em 1em 5em;
+
+		table {
+			margin: 0 auto;
+			tr {
+
+				td:nth-child(even) {
+					width: 25em;
+
+				}
+
+				td:nth-child(odd) {
+					width: 17em;
+
+				}
+
+
+				td {
+					background: #3cb53a;
+					height: 13em;
+
+					.image {
+						text-align: center;
+					}
+
+					.title {
+						color: #5c4e26;
+						font-size: 20px;
+						padding: 0em 0em 0em 1em;
+					}
+
+					.description {
+						color: #c8ffa8;
+						padding: 1em;
+					}
+
+					ul {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

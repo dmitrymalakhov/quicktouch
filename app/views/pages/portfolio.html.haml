@@ -1,0 +1,17 @@
+= content_for :style do
+	= stylesheet_link_tag :portfolio, :media => 'screen'
+
+
+- @applications.each do |application|
+	%table
+		%tr
+			%td
+				.image= image_tag application.photo.url()
+
+			%td
+				.title= application.title
+				.description= application.description
+				.nav
+					%ul
+						%li= link_to "Android", application.android_link, :target => "_blank"
+						%li= link_to "iOS", application.ios_link, :target => "_blank"

@@ -1,0 +1,20 @@
+= form_for @product, :html => { :multipart => true } do |f|
+  - if @product.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@product.errors.count, "error")} prohibited this product from being saved:"
+      %ul
+        - @product.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    = f.file_field :photo
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :locale
+    = f.text_field :locale
+  .actions
+    = f.submit 'Save'

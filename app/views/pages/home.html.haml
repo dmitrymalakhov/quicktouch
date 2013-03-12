@@ -1,0 +1,92 @@
+= content_for :scripts do
+	= javascript_include_tag "slider"
+= content_for :style do
+	= stylesheet_link_tag :home, :media => 'screen'
+.slideshow
+	.slidesContainer
+		.slide
+			.left
+				.title
+					= t('slide_title_text')
+				.slogan
+					= t('slide_slogan_text_1')
+				.descripte
+					= t('slide_descripte_text_1')
+				.button
+					= link_to t('slide_button_text_1'), client_path
+			.right
+				= image_tag("promo_1.png")
+		.slide
+			.left
+				.title
+					= t('slide_title_text')
+				.slogan
+					= t('slide_slogan_text_2')
+				.descripte
+					= t('slide_descripte_text_2')
+				.button
+					= link_to t('slide_button_text_2'), client_path
+			.right
+				= image_tag("promo_2.png")
+		.slide
+			.left
+				.title
+					= t('slide_title_text')
+				.slogan
+					= t('slide_slogan_text_3')
+				.descripte
+					= t('slide_descripte_text_3')
+				.button
+					= link_to t('slide_button_text_3'), client_path
+			.right
+				= image_tag("promo_3.png")
+		.slide
+			.left
+				.title
+					= t('slide_title_text')
+				.slogan
+					= t('slide_slogan_text_4')
+				.descripte
+					= t('slide_descripte_text_4')
+				.button
+					= link_to t('slide_button_text_4'), client_path
+			.right
+				= image_tag("promo_4.png")
+.mission.text-color-content
+	= t('mission')
+	.postscript.text-color-title
+		QuickTouch Team
+
+.devline
+	%table{:border=>"0", :cellspacing=>"0", :cellpadding=>"0"}
+		%tr
+			%td
+				= image_tag("devline_1.png")
+			%td
+				= image_tag("devline_2.png")
+			%td
+				= image_tag("devline_3.png")
+			%td
+				= image_tag("devline_4.png")
+		%tr.text-color-title
+			%td
+				.paragraph.brown.padding-left.small= t('devline_title_1')
+			%td
+				.paragraph.brown.padding-left.small= t('devline_title_2')
+			%td
+				.paragraph.brown.padding-left.small= t('devline_title_3')
+			%td
+				.paragraph.brown.padding-left.small= t('devline_title_4')
+		%tr.text-color-content
+			%td
+				.descript
+					= t('devline_descript_1')
+			%td
+				.descript
+					= t('devline_descript_2')
+			%td
+				.descript
+					= t('devline_descript_3')
+			%td
+				.descript
+					= t('devline_descript_4')

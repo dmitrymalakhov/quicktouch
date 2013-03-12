@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @worker.name
+%p
+  %b Job:
+  = @worker.job
+%p
+  %b Phone:
+  = @worker.phone
+%p
+  %b Email:
+  = @worker.email
+%p
+  %b Skype:
+  = @worker.skype
+%p
+  %b Region:
+  = @worker.region
+
+= link_to 'Edit', edit_worker_path(@worker)
+\|
+= link_to 'Back', workers_path

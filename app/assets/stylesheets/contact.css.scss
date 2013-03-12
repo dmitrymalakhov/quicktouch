@@ -1,0 +1,20 @@
+@import "compass";
+
+.wrapper {
+	.content {
+		padding: 2em 5em 0em 5em;
+		text-align: center;
+
+		.worker {
+			@include inline-block;
+			padding: 0.5em;
+
+			table {
+				td {
+					text-align: center;
+				}
+			}
+
+		}
+	}
+}

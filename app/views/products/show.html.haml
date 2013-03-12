@@ -1,0 +1,13 @@
+= content_for :style do
+	= stylesheet_link_tag :products, :media => 'screen'
+
+%p#notice= notice
+
+%table
+	%tr
+		%td
+			%ul
+				%li.paragraph.green.text-color-title.large_text= @product.title
+				%li.paragraph.green.text-color-content= @product.description.html_safe
+		%td
+			= image_tag @product.photo.url()

@@ -1,0 +1,42 @@
+= content_for :style do
+	= stylesheet_link_tag :client, :media => 'screen'
+
+= content_for :promo do
+	.promo.paragraph.gray
+		%ul.padding-left.small
+			%li.promo_title.text-color-title
+				МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+			%li.promo_content.text-color-content
+				Это Ваше преимущество в борьбе за клиента!
+%table
+	%tr
+		%td
+			= image_tag("clients_image_1.png", :alt => "QuickTouch")
+		%td
+			%ul.text-color-content
+				%li.paragraph.green
+					Привлекайте новых покупателей, внедряя наши инновации.
+				%li.paragraph.green
+					Используйте уникальные возможности для проведения промо-акций и розыгрышей.
+				%li.paragraph.green
+					Держите клиента всегда в курcе с помощью технологии push-уведомлений.
+				%li.paragraph.green
+					Примените возможности GPS и позвольте найти вас.
+				%li.paragraph.green
+					Подчеркните ваш имидж современной компании.
+				%li.paragraph.green
+					Всего один клик отделяет клиента от Вашего предложения.
+	%tr
+		%td
+		%td.text-color-title.padding-left.middle
+			%p
+				Перечисленные преимущества дадут прирост любой компании не зависимо от ее масштаба и вида бизнеса.
+			%p
+				Мы создадим для Вас не просто программу, а мощнейшую маркетинговую машину, замаскированную под мобильное приложение.
+.products
+	.title
+		А так же предлагаем Вам ознакомиться с готовыми решениями QuickTouch
+	.container
+		- @products.each do |product|
+			.item
+				= link_to image_tag(product.photo.url()), product_path(product.id)

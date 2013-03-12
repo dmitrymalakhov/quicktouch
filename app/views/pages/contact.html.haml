@@ -1,0 +1,21 @@
+= content_for :style do
+	= stylesheet_link_tag :contact, :media => 'screen'
+
+- @workers.each do |worker|
+	.worker
+		%table
+			%tr
+				%td.text-color-title.small_text= worker.region
+			%tr
+				%td
+					= image_tag worker.photo.url()
+			%tr
+				%td.text-color-content.large_text= worker.name
+			%tr
+				%td.text-color-title.small_text= worker.job
+			%tr
+				%td.text-color-content.middle_text= worker.phone
+			%tr
+				%td.text-color-content.middle_text= worker.email
+			%tr
+				%td.text-color-content.middle_text= worker.skype

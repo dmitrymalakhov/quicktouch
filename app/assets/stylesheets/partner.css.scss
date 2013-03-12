@@ -1,0 +1,29 @@
+@import "compass";
+
+.wrapper {
+	.content {
+		padding: 0em 5em 0em 5em;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.block_1 {
+			border-top: 5px solid #f0f0f0;
+			border-bottom: 5px solid #f0f0f0;
+			padding: 0.3em 0em 0.3em 0em;
+			margin-top: 1em;
+			font-size: 23px;
+
+			img {
+				@include inline-block;
+			}
+		}
+
+		.block_2 {
+			font-size: 26px;
+			padding: 0.3em 0em 0.3em 0em;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+%html
+	%head
+		= csrf_meta_tags
+		= stylesheet_link_tag :common, :media => 'screen'
+		= javascript_include_tag "jquery-1.9.0.min"
+
+		= yield :scripts
+		= yield :style
+	%body
+		.wrapper
+			.header
+				.logo
+					= link_to logo, root_path
+				.routes
+					.locale
+						= link_to_unless I18n.locale == :en, "english version ", locale: :en
+						|
+						= link_to_unless I18n.locale == :ru, " русская версия", locale: :ru
+					.nav
+						%ul
+							%li= link_to t('nav_home'), root_path
+							%li= link_to t('nav_client'), client_path
+							%li= link_to t('nav_partner'), partner_path
+							%li= link_to t('nav_works'), portfolio_path
+							%li= link_to t('nav_contact'), contact_path
+					= yield :promo
+
+			.content
+				= yield
+			.footer
+				.label
+					= link_to image_tag("label.png", :alt => "QuickTouch"), root_path
+				.contact
+					%table
+						%tr
+							%td.paragraph.yellow.padding-left.small email
+							%td example@gmail.com
+						%tr
+							%td.paragraph.yellow.padding-left.small= t('phone')
+							%td 112112
+				.slogan
+			.copyright
+				Copyright QuickTouch LLC, 2013
