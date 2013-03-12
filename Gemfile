@@ -9,6 +9,11 @@ gem 'sqlite3'
 
 group :development do
 	gem "rspec-rails", "~> 2.12.2"
+	gem 'capistrano-deploy', '~> 0.1.1', :require => nil
+end
+
+group :production do
+  gem 'unicorn', '~> 3.6.2', :require => nil
 end
 
 group :test do
