@@ -1,0 +1,12 @@
+export PATH ; PATH="/Users/dmitrii.malakhov/.rvm/gems/ruby-1.9.3-p374@quicktouch/bin:/Users/dmitrii.malakhov/.rvm/gems/ruby-1.9.3-p374@global/bin:/Users/dmitrii.malakhov/.rvm/rubies/ruby-1.9.3-p374/bin:/Users/dmitrii.malakhov/.rvm/bin:$PATH"
+export rvm_env_string ; rvm_env_string='ruby-1.9.3-p374@quicktouch'
+export rvm_path ; rvm_path='/Users/dmitrii.malakhov/.rvm'
+export rvm_ruby_string ; rvm_ruby_string='ruby-1.9.3-p374'
+export rvm_gemset_name ; rvm_gemset_name='quicktouch'
+export RUBY_VERSION ; RUBY_VERSION='ruby-1.9.3-p374'
+export GEM_HOME ; GEM_HOME='/Users/dmitrii.malakhov/.rvm/gems/ruby-1.9.3-p374@quicktouch'
+export GEM_PATH ; GEM_PATH='/Users/dmitrii.malakhov/.rvm/gems/ruby-1.9.3-p374@quicktouch:/Users/dmitrii.malakhov/.rvm/gems/ruby-1.9.3-p374@global'
+export MY_RUBY_HOME ; MY_RUBY_HOME='/Users/dmitrii.malakhov/.rvm/rubies/ruby-1.9.3-p374'
+export IRBRC ; IRBRC='/Users/dmitrii.malakhov/.rvm/rubies/ruby-1.9.3-p374/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT
