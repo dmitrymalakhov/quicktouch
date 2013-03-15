@@ -53,13 +53,35 @@ $height_slide: 363px;
 					  	.button {
 					  		margin: 2em;
 
+
 					  		a {
-					  			background: #5c5125;
+					  			border:solid 1px #000000;
+								-moz-border-radius: 8px;
+								-webkit-border-radius: 8px;
+								border-radius: 8px;
+					  			background: #4a3e1b;
   								padding: 1em;
 							    color: white;
 							    font-size: 18px;
 							    border: 1px #3d6614 solid;
 					  		}
+
+					  		a:hover {
+								border: 0px solid #a0ed53;
+								-moz-box-shadow: 1px 2px 31px #a0ed53;
+								-webkit-box-shadow: 1px 2px 31px #a0ed53;
+								box-shadow: 1px 2px 31px #a0ed53;
+					  		}
+
+					  		a:active {
+								background: #2a732a;
+								border: none;
+								-moz-box-shadow: 1px 2px 20px #a0ed53;
+								-webkit-box-shadow: 1px 2px 20px #a0ed53;
+								box-shadow: 1px 2px 20px #a0ed53;
+					  		}
+
+
 					  	}
 					}
 
