@@ -5,8 +5,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
-gem "mysql", "~> 2.9.1"
+gem 'sqlite3', :group => [:development, :test]
 
 group :development do
 	gem "rspec-rails", "~> 2.12.2"
@@ -19,16 +18,16 @@ group :production do
 end
 
 group :test do
-	# gem "rspec", "~> 2.12.0"
-	# gem "webrat", "~> 0.7.3"
-	# gem "ZenTest", '4.4.1', :git => 'git://github.com/seattlerb/zentest.git'
-	# gem "test-unit", "~> 2.5.4"
-	# gem "autotest", "~> 4.4.6"
-	# gem "autotest-rails-pure", "~> 4.1.2"
-	# gem "autotest-notification", "~> 2.3.4"
-	# gem "autotest-growl", "~> 0.2.16"
-	# gem "autotest-fsevent", "~> 0.2.8"
-	# gem "spork", "~> 0.9.2"
+	gem "rspec", "~> 2.12.0"
+	gem "webrat", "~> 0.7.3"
+	gem "ZenTest", '4.4.1', :git => 'git://github.com/seattlerb/zentest.git'
+	gem "test-unit", "~> 2.5.4"
+	gem "autotest", "~> 4.4.6"
+	gem "autotest-rails-pure", "~> 4.1.2"
+	gem "autotest-notification", "~> 2.3.4"
+	gem "autotest-growl", "~> 0.2.16"
+	gem "autotest-fsevent", "~> 0.2.8"
+	gem "spork", "~> 0.9.2"
 
 end
 
