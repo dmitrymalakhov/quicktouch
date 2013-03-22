@@ -6,6 +6,7 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', :group => [:development, :test]
+gem "activerecord-jdbcsqlite3-adapter", "~> 1.2.7", :group => [:development, :test]
 
 group :development do
 	gem "rspec-rails", "~> 2.12.2"
