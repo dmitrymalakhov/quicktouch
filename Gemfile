@@ -6,16 +6,11 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', :group => [:development, :test]
-gem "activerecord-jdbcsqlite3-adapter", "~> 1.2.7", :group => [:development, :test]
 
 group :development do
 	gem "rspec-rails", "~> 2.12.2"
 	gem 'capistrano-deploy', '~> 0.1.1', :require => nil
 	gem "rvm-capistrano", "~> 1.2.7"
-end
-
-group :production do
-  gem 'unicorn', '~> 3.6.2', :require => nil
 end
 
 group :test do
