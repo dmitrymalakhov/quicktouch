@@ -5,9 +5,9 @@
 	.promo.paragraph.gray
 		%ul.padding-left.small
 			%li.promo_title.text-color-title
-				МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+				= t('client_promo_title')
 			%li.promo_content.text-color-content
-				Это Ваше преимущество в борьбе за клиента!
+				= t('client_promo_content')
 %table
 	%tr
 		%td
@@ -15,27 +15,27 @@
 		%td
 			%ul.text-color-content
 				%li.paragraph.green
-					Привлекайте новых покупателей, внедряя наши инновации.
+					= t('client_fact_1')
 				%li.paragraph.green
-					Используйте уникальные возможности для проведения промо-акций и розыгрышей.
+					= t('client_fact_2')
 				%li.paragraph.green
-					Держите клиента всегда в курcе с помощью технологии push-уведомлений.
+					= t('client_fact_3')
 				%li.paragraph.green
-					Примените возможности GPS и позвольте найти вас.
+					= t('client_fact_4')
 				%li.paragraph.green
-					Подчеркните ваш имидж современной компании.
+					= t('client_fact_5')
 				%li.paragraph.green
-					Всего один клик отделяет клиента от Вашего предложения.
+					= t('client_fact_6')
 	%tr
 		%td
 		%td.text-color-title.padding-left.middle
 			%p
-				Перечисленные преимущества дадут прирост любой компании не зависимо от ее масштаба и вида бизнеса.
+				= t('client_fact_7')
 			%p
-				Мы создадим для Вас не просто программу, а мощнейшую маркетинговую машину, замаскированную под мобильное приложение.
+				= t('client_fact_8')
 .products
 	.title
-		А так же предлагаем Вам ознакомиться с готовыми решениями QuickTouch
+		= t('client_product')
 	.container
 		- @products.each do |product|
 			.item

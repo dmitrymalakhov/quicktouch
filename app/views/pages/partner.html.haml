@@ -5,24 +5,22 @@
 	.promo.paragraph.gray
 		%ul.padding-left.small
 			%li.promo_title.text-color-title
-				ПАРТНЕРАМ
+				= t('partner_promo_title')
 			%li.promo_content.text-color-content
-				Мы можем работать совместно и взаимовыгодно.
+				= t('partner_promo_content')
 
 = image_tag(partner_banner_path, :alt => "QuickTouch")
 
 .block_1.text-color-content
 	= image_tag("lizzard_icon.png", :alt => "QuickTouch")
-	ГАРАНТИРУЕМ КАЧЕСТВО ВЫПОЛНЕННЫХ РАБОТ
+	= t('partner_block_1')
 .block_2.text-color-title
-	ВЫ МОЖЕТЕ НАЧАТЬ ЗАРАБАТЫВАТЬ ВМЕСТЕ С НАМИ
+	= t('partner_block_2')
 .block_3.text-color-content
 	%p
-		Будем рады сотрудничать и рассмотрим Ваши предложения!
+		= t('partner_block_3_1')
 	%p
-		Ждем заявки на dmitrii.malakhov@gmail.com
+		= t('partner_block_3_2')
 	%p
-		С уважением,
-		%br
-		Малахов Д.И. Операционный директор QuickTouch LLC
+		= t('partner_block_3_3')
 
