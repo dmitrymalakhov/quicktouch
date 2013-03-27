@@ -3,6 +3,7 @@
 		= csrf_meta_tags
 		= stylesheet_link_tag :common, :media => 'screen'
 		= javascript_include_tag "jquery-1.9.0.min"
+		= analytics_init if Rails.env.production?
 		%title Quick Touch
 		= yield :scripts
 		= yield :style
