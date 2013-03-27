@@ -34,4 +34,6 @@ Quicktouch::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  GA.tracker = "UA-36932968-1"
 end
