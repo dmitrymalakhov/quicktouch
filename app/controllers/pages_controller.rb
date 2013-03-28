@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	layout "main"
 
 	def contact
-		@workers = Worker.all
+		@workers = Worker.where("locale = '#{I18n.locale}'").order("id desc")
 	end
 
 	def portfolio
