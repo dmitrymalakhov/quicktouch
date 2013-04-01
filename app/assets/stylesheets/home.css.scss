@@ -44,6 +44,7 @@ $height_slide: 363px;
 					  		color: white;
 						    font-size: 30px;
 						    padding-top: 20px;
+						    line-height: 1em;
 					  	}
 					  	.descripte {
 					  		color: #c8ffa8;
@@ -51,7 +52,7 @@ $height_slide: 363px;
 						    padding-top: 20px;
 					  	}
 					  	.button {
-					  		margin: 2em;
+					  		margin: 2em 0em 0em 0em;
 
 
 					  		a {
@@ -63,6 +64,7 @@ $height_slide: 363px;
   								padding: 1em;
 							    color: white;
 							    font-size: 18px;
+							    text-decoration: none;
 							    border: 1px #3d6614 solid;
 					  		}
 
@@ -121,6 +123,7 @@ $height_slide: 363px;
 						display: inline-block;
 
 						&.descript {
+							font-family: PT Sans Narrow;
 							width: 12em;
 							color: #5c4f27;
 						}

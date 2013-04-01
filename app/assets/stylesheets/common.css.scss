@@ -6,6 +6,7 @@ body {
 	background: url(image-path('casper_mask.png')) #34994a ;
 	padding: 0px;
 	margin: 0 auto;
+	font-family: PT Sans Caption;
 }
 
 .round {
@@ -150,10 +151,11 @@ body {
 
 		.label {
 			@include inline-block;
+			padding-left: 4em;
 		}
 		.contact {
 			@include inline-block;
-			padding: 5px;
+			padding-left: 4.5em;
 			table {
 					margin: 0;
 					padding: 0;
