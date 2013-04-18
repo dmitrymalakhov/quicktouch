@@ -38,8 +38,37 @@
 						padding: 1em;
 					}
 
-					ul {
-						text-align: center;
+					.links {
+						/*padding: 0px 1em 0px 1em;*/
+
+						ul {
+							margin: 0;
+							padding: 0;
+							text-align: center;
+							li {
+								list-style-type: none;
+								@include inline-block;
+								padding: 0.7em 0;
+								background-color: #72b344;
+								width: 8.5em;
+								text-align: center;
+
+								a {
+									text-decoration: none;
+									color: white;
+									font-size: 17px;
+								}
+								a:visited {
+
+								}
+								a:hover {
+									text-decoration: none;
+								}
+							}
+							li:hover {
+								background-color: #5c4e32;
+							}
+						}
 					}
 				}
 			}
