@@ -13,5 +13,9 @@
 				.description= application.description
 				.links
 					%ul
-						%li= link_to "Android", application.android_link, :target => "_blank"
-						%li= link_to "iOS", application.ios_link, :target => "_blank"
+						- if !application.android_link.blank?
+							%li= link_to "Android", application.android_link, :target => "_blank"
+						- if !application.ios_link.blank?
+							%li= link_to "iOS", application.ios_link, :target => "_blank"
+						- if !application.web_link.blank?
+							%li= link_to "WEB", application.web_link, :target => "_blank"
