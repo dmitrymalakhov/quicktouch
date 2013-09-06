@@ -10,7 +10,7 @@
 
 			%td
 				.title= application.title
-				.description= application.description
+				.description= raw(application.description)
 				.links
 					%ul
 						- if !application.android_link.blank?
