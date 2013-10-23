@@ -25,6 +25,7 @@ class ApplicationsController < ApplicationController
   # GET /applications/new.json
   def new
     @application = Application.new
+    5.times { @application.screenshots.build }
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class ApplicationsController < ApplicationController
   # GET /applications/1/edit
   def edit
     @application = Application.find(params[:id])
+    5.times { @application.screenshots.build }
   end
 
   # POST /applications

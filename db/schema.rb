@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130627043750) do
+ActiveRecord::Schema.define(:version => 20131023095045) do
 
   create_table "applications", :force => true do |t|
     t.string   "title"
@@ -37,6 +37,17 @@ ActiveRecord::Schema.define(:version => 20130627043750) do
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
   end
+
+  create_table "screenshots", :force => true do |t|
+    t.integer  "application_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+  end
+
+  add_index "screenshots", ["application_id"], :name => "index_screenshots_on_application_id"
 
   create_table "workers", :force => true do |t|
     t.string   "name"

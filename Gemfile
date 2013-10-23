@@ -24,7 +24,6 @@ group :test do
 	gem "autotest-growl", "~> 0.2.16"
 	gem "autotest-fsevent", "~> 0.2.8"
 	gem "spork", "~> 0.9.2"
-
 end
 
 # Gems used only for assets and not required

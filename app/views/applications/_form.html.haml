@@ -25,5 +25,15 @@
   .field
     = f.label :locale
     = f.text_field :locale
+  .field
+    = f.fields_for :screenshots do |screenshot|
+      - if screenshot.object.new_record?
+        = screenshot.file_field :image
+  .field
+    = f.fields_for :screenshots do |screenshot|
+      - unless screenshot.object.new_record?
+        .thumbnail
+          = link_to( image_tag(screenshot.object.image.url(:thumb)), screenshot.object.image.url(:original) )
+          = screenshot.check_box :_delete
   .actions
     = f.submit 'Save'
