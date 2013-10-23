@@ -1,4 +1,9 @@
 = content_for :scripts do
+	= javascript_include_tag "jquery.carouFredSel-6.2.1-packed"
+	= javascript_include_tag "jquery.mousewheel.min"
+	= javascript_include_tag "jquery.touchSwipe.min"
+	= javascript_include_tag "jquery.transit.min"
+	= javascript_include_tag "jquery.ba-throttle-debounce.min"
 	= javascript_include_tag "slider"
 = content_for :style do
 	= stylesheet_link_tag :home, :media => 'screen'
@@ -53,8 +58,11 @@
 			.right
 				= image_tag("promo_4.png")
 .mission.text-color-content
-	.text
-		= t('mission')
+	.image_carousel
+		.images
+			- @applications.each do |application|
+				= image_tag application.photo.url(), :width => 128, :height => 128
+		.clearfix
 	.postscript.text-color-title.small_text
 		QuickTouch Team
 

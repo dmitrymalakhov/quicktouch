@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
 	layout "main"
 
+	def home
+		@applications = Application.where("locale = '#{I18n.locale}'").order("id desc")
+	end
 	def contact
 		@workers = Worker.where("locale = '#{I18n.locale}'").order("id desc")
 	end

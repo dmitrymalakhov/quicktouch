@@ -5,7 +5,7 @@ $(document).ready(function(){
   var numberOfSlides = slides.length;
   var revers = false;
 
-
+  $(".images").carouFredSel();
 
   // Remove scrollbar in JS
   $('.slidesContainer').css('overflow', 'hidden');
@@ -23,31 +23,30 @@ $(document).ready(function(){
   $('.slideInner').css('width', slideWidth * numberOfSlides);
   // Hide left arrow control on first load
 
+  function slide(position, callback) {
+      position = (typeof(position) == 'undefined') ? 0 : position;
+      if(position==0) {
+        revers = false;
+      } else {
+        if(position==numberOfSlides-1)
+          revers = true;
+      }
 
-    function slide(position, callback) {
-        position = (typeof(position) == 'undefined') ? 0 : position;
-        if(position==0) {
-          revers = false;
-        } else {
-          if(position==numberOfSlides-1)
-            revers = true;
-        }
+      currentPosition = (revers) ? currentPosition-1 : currentPosition+1;
 
-        currentPosition = (revers) ? currentPosition-1 : currentPosition+1;
+      $('.slideInner').animate({
+        'marginLeft' : slideWidth*(-currentPosition)
+      });
 
-        $('.slideInner').animate({
-          'marginLeft' : slideWidth*(-currentPosition)
-        });
+      callback = function() {
+        return position;
+      };
+  }
 
-        callback = function() {
-          return position;
-        };
-    }
-
-    function looper() {
-      slide(currentPosition, currentPosition);
-      setTimeout(looper, 7000);
-    }
-
+  function looper() {
+    slide(currentPosition, currentPosition);
     setTimeout(looper, 7000);
+  }
+
+  setTimeout(looper, 7000);
 });

@@ -67,6 +67,24 @@ body {
 	width: 65em;
 	box-shadow: 0 0 10px #000;
 
+	.image_carousel {
+		padding: 15px 0 15px 40px;
+
+		img {
+			border: 1px solid #ccc;
+			background-color: white;
+			padding: 9px;
+			margin: 7px;
+			display: block;
+			float: left;
+		}
+	}
+
+	.clearfix {
+		float: none;
+		clear: both;
+	}
+
 	.nav {
 		/*padding: 0px 1em 0px 1em;*/
 
