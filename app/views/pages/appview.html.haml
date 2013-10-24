@@ -1,0 +1,37 @@
+= content_for :style do
+	= stylesheet_link_tag :appview, :media => 'screen'
+= content_for :scripts do
+	= javascript_include_tag "jquery.carouFredSel-6.2.1-packed"
+	= javascript_include_tag "jquery.mousewheel.min"
+	= javascript_include_tag "jquery.touchSwipe.min"
+	= javascript_include_tag "jquery.transit.min"
+	= javascript_include_tag "jquery.ba-throttle-debounce.min"
+	= javascript_include_tag "slider"
+= content_for :promo do
+	.promo.paragraph.gray
+		%ul.padding-left.small
+			%li.promo_content.text-color-content
+				= @application.title
+
+%table
+	%tr
+		%td
+			НАШИ ПРОЕКТЫ
+			%ul
+				- @applications.each do |application|
+					%li.divider.green
+						= link_to application.title, :controller => "pages", :action => "appview", :id => application.id
+		%td
+			.image_carousel
+				.images
+					- @application.screenshots.each do |screenshot|
+						= link_to image_tag(screenshot.image.url(:large), :height => 440), screenshot.image.url(:original), {:rel => "prettyPhoto[pp_gal]"}
+			.description
+				= raw(@application.description)
+			
+			- if !@application.android_link.blank?
+				.links= link_to "Android", @application.android_link, :target => "_blank"
+			- if !@application.ios_link.blank?
+				.links= link_to "iOS", @application.ios_link, :target => "_blank"
+			- if !@application.web_link.blank?
+				.links= link_to "WEB", @application.web_link, :target => "_blank"

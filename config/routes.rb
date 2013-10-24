@@ -1,10 +1,6 @@
 Quicktouch::Application.routes.draw do
   resources :products
-
-
   resources :applications
-
-
   resources :workers
 
 
@@ -14,6 +10,8 @@ Quicktouch::Application.routes.draw do
     match 'partner', :to => 'pages#partner'
     match 'contact', :to => 'pages#contact'
     match 'portfolio', :to => 'pages#portfolio'
+    match 'appview/:id', :to => 'pages#appview'
+    
     root :to => 'pages#home'
   end
   # The priority is based upon order of creation:

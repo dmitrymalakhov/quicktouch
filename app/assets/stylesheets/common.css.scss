@@ -1,6 +1,7 @@
 @import "compass";
 
 $paragraph_box_width: 15px;
+$divider_box_width: 1px;
 
 body {
 	background: url(image-path('casper_mask.png')) #34994a ;
@@ -29,6 +30,25 @@ body {
 
 	&.green {
 		border-left: $paragraph_box_width solid #a2d943;
+	}
+}
+
+.divider
+ {
+	&.yellow {
+		border-bottom: $divider_box_width solid #e0e02b;
+	}
+
+	&.brown {
+		border-bottom: $divider_box_width solid #595032;
+	}
+
+	&.gray {
+		border-bottom: $divider_box_width solid #f0f0f0;
+	}
+
+	&.green {
+		border-bottom: $divider_box_width solid #a2d943;
 	}
 }
 
@@ -78,6 +98,11 @@ body {
 			display: block;
 			float: left;
 		}
+
+		a {
+			display: block;
+			float: left;
+		}
 	}
 
 	.clearfix {
@@ -120,7 +145,7 @@ body {
 	.header {
 		padding: 1em 5em 0em 5em;
 		.promo {
-			width: 20em;
+			width: 21em;
 			ul {
 				list-style: none;
 			}

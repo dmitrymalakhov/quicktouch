@@ -61,7 +61,7 @@
 	.image_carousel
 		.images
 			- @applications.each do |application|
-				= image_tag application.photo.url(), :width => 128, :height => 128
+				= link_to image_tag(application.photo.url(), :width => 128, :height => 128), :controller => "pages", :action => "appview", :id => application.id
 		.clearfix
 	.postscript.text-color-title.small_text
 		QuickTouch Team

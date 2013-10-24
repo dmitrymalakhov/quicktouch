@@ -26,6 +26,7 @@
     = f.label :locale
     = f.text_field :locale
   .field
+    = f.label :screenshots
     = f.fields_for :screenshots do |screenshot|
       - if screenshot.object.new_record?
         = screenshot.file_field :image

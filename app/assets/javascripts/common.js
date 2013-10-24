@@ -12,4 +12,8 @@ $(document).ready(function(){
         min_height: 160,
         height : 180
     });
+
+    $(".image_carousel a[rel^='prettyPhoto']").prettyPhoto({
+        show_title: false
+    });
 });
