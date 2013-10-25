@@ -25,7 +25,7 @@
 			.image_carousel
 				.images
 					- @application.screenshots.each do |screenshot|
-						= link_to image_tag(screenshot.image.url(:large), :height => 440), screenshot.image.url(:original), {:rel => "prettyPhoto[pp_gal]"}
+						= link_to image_tag(screenshot.image.url(:large), :height => 440), screenshot.image.url(:large), {:rel => "prettyPhoto[pp_gal]"}
 			.description
 				= raw(@application.description)
 			
