@@ -10,6 +10,8 @@
 = content_for :promo do
 	.promo.paragraph.gray
 		%ul.padding-left.small
+			%li.promo_title.text-color-content
+				= t('client_promo_title')
 			%li.promo_content.text-color-content
 				= @application.title
 
@@ -25,7 +27,7 @@
 			.image_carousel
 				.images
 					- @application.screenshots.each do |screenshot|
-						= link_to image_tag(screenshot.image.url(:large), :height => 440), screenshot.image.url(:large), {:rel => "prettyPhoto[pp_gal]"}
+						= link_to image_tag(screenshot.image.url(:large), :style => "width: 260px; min-height: 460px;"), screenshot.image.url(:large), {:rel => "prettyPhoto[pp_gal]"}
 			.description
 				= raw(@application.description)
 			
