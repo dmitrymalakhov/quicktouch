@@ -5,7 +5,6 @@
 		= stylesheet_link_tag :common, :media => 'screen'
 		/ = javascript_include_tag "jquery-1.9.0.min"
 		= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-		= javascript_include_tag "google-analytic"
 		= javascript_include_tag "tinymce/tinymce.min.js"
 		= javascript_include_tag "jquery.prettyPhoto"
 		= javascript_include_tag "common.js"
@@ -17,6 +16,16 @@
 
 		= stylesheet_link_tag :prettyPhoto, :media => 'screen'
 	%body
+		:javascript
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36932968-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
 		.wrapper
 			.header
 				.logo
