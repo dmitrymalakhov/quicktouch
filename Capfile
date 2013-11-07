@@ -9,7 +9,8 @@ use_recipes :git, :rails, :bundle, :unicorn
 
 server '188.225.32.92', :web, :app, :db, :primary => true
 set :user, 'madgest'
-set :deploy_to, '/home/madgest/my_project'
+set :rails_env, 'production'
+set :deploy_to, '/home/madgest/quicktouch'
 set :repository, 'https://github.com/dmitrymalakhov/quicktouch.git'  #'git@github.com:dmitrymalakhov/quicktouch.git'
 
 ssh_options[:forward_agent] = true

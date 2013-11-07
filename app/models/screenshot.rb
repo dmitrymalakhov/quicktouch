@@ -1,4 +1,5 @@
 class Screenshot < ActiveRecord::Base
+	include Paperclip
 	attr_accessible :image
 	belongs_to :application
 	has_attached_file :image,

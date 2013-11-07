@@ -15,15 +15,15 @@ end
 
 group :test do
 	gem "rspec", "~> 2.12.0"
-	gem "webrat", "~> 0.7.3"
-	gem "ZenTest", '4.4.1', :git => 'git://github.com/seattlerb/zentest.git'
-	gem "test-unit", "~> 2.5.4"
-	gem "autotest", "~> 4.4.6"
-	gem "autotest-rails-pure", "~> 4.1.2"
-	gem "autotest-notification", "~> 2.3.4"
-	gem "autotest-growl", "~> 0.2.16"
-	gem "autotest-fsevent", "~> 0.2.8"
-	gem "spork", "~> 0.9.2"
+	# gem "webrat", "~> 0.7.3"
+	# gem "ZenTest", '4.4.1', :git => 'git://github.com/seattlerb/zentest.git'
+	# gem "test-unit", "~> 2.5.4"
+	# gem "autotest", "~> 4.4.6"
+	# gem "autotest-rails-pure", "~> 4.1.2"
+	# gem "autotest-notification", "~> 2.3.4"
+	# gem "autotest-growl", "~> 0.2.16"
+	# gem "autotest-fsevent", "~> 0.2.8"
+	# gem "spork", "~> 0.9.2"
 end
 
 # Gems used only for assets and not required
