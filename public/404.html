@@ -1,26 +1,37 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <style type="text/css">
-    body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-    div.dialog {
-      width: 25em;
-      padding: 0 4em;
-      margin: 4em auto 0 auto;
-      border: 1px solid #ccc;
-      border-right-color: #999;
-      border-bottom-color: #999;
-    }
-    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-  </style>
-</head>
+	<head>
+		<title>Страница недоступна</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.wrapper {
+				height: 100%;
+				width: 100%;
+				background: #d8eded;				
+			}
+			.wrapper .content {
+				margin: 0 auto;
+				width: 315px;
+        padding: 2em;
+			}
 
-<body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
-    <p>You may have mistyped the address or the page may have moved.</p>
-  </div>
-</body>
+      .wrapper .copyright {
+        width: 14em;
+        color: #c2c2c2;
+        font-size: 12px;
+        margin: 0 auto;
+        padding: 1em;
+      }
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				Запрашиваемая Вами страница не существует
+			</div>
+      <div class="copyright"><a href="http://quicktouch.ru">Copyright QuickTouch LLC, 2013</a></div>
+		</div>
+	</body>
 </html>

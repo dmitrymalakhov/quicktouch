@@ -6,6 +6,9 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem "haml"
+gem "paperclip", :git => 'git://github.com/thoughtbot/paperclip.git'
+gem 'jquery-rails'
 
 group :development do
 	gem "rspec-rails", "~> 2.12.2"
@@ -30,17 +33,15 @@ end
 # in production environments by default.
 group :assets do
   	gem 'sass-rails',   '~> 3.2.3'
-  	gem 'coffee-rails', '~> 3.2.1'
   	gem "compass", :git => 'git://github.com/chriseppstein/compass.git'
 	gem "compass-rails", "~> 1.0.3"
 	gem 'haml-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
   	gem 'uglifier', '>= 1.0.3'
-  	gem "paperclip"
+  	gem 'turbo-sprockets-rails3'
   end
 
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

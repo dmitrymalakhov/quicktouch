@@ -5,14 +5,14 @@ Quicktouch::Application.routes.draw do
 
 
   scope "(:locale)", :locale => /en|ru/ do
-    match 'home', :to => 'pages#home'
-    match 'client', :to => 'pages#client'
-    match 'partner', :to => 'pages#partner'
-    match 'contact', :to => 'pages#contact'
-    match 'portfolio', :to => 'pages#portfolio'
-    match 'appview/:id', :to => 'pages#appview'
+    match 'home', :to => 'application#home'
+    match 'client', :to => 'application#client'
+    match 'partner', :to => 'application#partner'
+    match 'contact', :to => 'application#contact'
+    match 'portfolio', :to => 'application#portfolio'
+    match 'appview/:id', :to => 'application#appview'
     
-    root :to => 'pages#home'
+    root :to => 'application#home'
   end
   # The priority is based upon order of creation:
   # first created -> highest priority.
