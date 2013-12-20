@@ -8,9 +8,9 @@ gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem "haml"
 gem "paperclip", :git => 'git://github.com/thoughtbot/paperclip.git'
-gem "activeadmin", git: 'https://github.com/gregbell/active_admin.git' #"0.6.2"
+gem "activeadmin", :git => 'https://github.com/gregbell/active_admin.git' #"0.6.2"
 gem 'jquery-rails', "2.3.0"
-gem 'bcrypt-ruby', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem 'bcrypt-ruby', :git => 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 gem "ckeditor"
 
 group :development do
