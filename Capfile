@@ -9,7 +9,7 @@ use_recipes :git, :rails, :bundle, :unicorn
 
 server '188.225.32.92', :web, :app, :db, :primary => true
 set :user, 'madgest'
-set :rails_env, 'production'
+set :rails_env, 'development'
 set :deploy_to, '/home/madgest/quicktouch'
 set :repository, 'https://github.com/dmitrymalakhov/quicktouch.git'  #'git@github.com:dmitrymalakhov/quicktouch.git'
 
