@@ -1,52 +1,233 @@
 ru:
- nav_home: ГЛАВНАЯ
- nav_about: О НАС
- nav_works: ПОРТФОЛИО
- nav_contact: КОНТАКТЫ
- phone: Тел.
- nav_client:  КЛИЕНТАМ
- nav_partner: ПАРТНЕРАМ
- slide_title_text: Мобильные приложения
- slide_slogan_text_1: Помогают найти главное
- slide_slogan_text_2: Доставляют самое нужное
- slide_slogan_text_3: B2B
- slide_slogan_text_4: Позволяют быть ближе к людям
- slide_descripte_text_1: Открывая новые возможности к поиску необходимой информации
- slide_descripte_text_2: Каждый может с легкостью оформить заказ из любой точки мира. Быстро и удобно!
- slide_descripte_text_3: Всегда и везде обладать актуальной информацией, а так же оперативно принимать важные решения.
- slide_descripte_text_4: Мобильное приложение на телефоне или планшете позволит всегда быть на связи с Вашими клиентами.
- slide_button_text_1: Найти главное
- slide_button_text_2: Получить нужное
- slide_button_text_3: Принять решение
- slide_button_text_4: Стать ближе
- mission: Сделать мир мобильнее и дать людям возможность получать желаемое сразу! Вот наша цель!
- devline_title_1: АНАЛИЗ
- devline_title_2: ПРОЕКТИРОВАНИЕ
- devline_title_3: РАЗРАБОТКА
- devline_title_4: ПОДДЕРЖКА
- devline_descript_1: Подробно изучаем тонкости Вашего бизнеса и предлагаем самые эффективные решения.
- devline_descript_2: Создаем макет, отражающий все принципы взаимодействия пользователей с приложением.
- devline_descript_3: Комбинируя современные технологии с проверенными временем методологиями, реализуем проект любой сложности качественно и в срок.
- devline_descript_4: Вместе и навсегда :)
- client_fact_1: Привлекайте новых покупателей, внедряя наши инновации.
- client_fact_2: Используйте уникальные возможности для проведения промо-акций и розыгрышей.
- client_fact_3: Держите клиента всегда в курcе с помощью технологии push-уведомлений.
- client_fact_4: Примените возможности GPS и позвольте найти вас.
- client_fact_5: Подчеркните ваш имидж современной компании.
- client_fact_6: Всего один клик отделяет клиента от Вашего предложения.
- client_fact_7: Перечисленные преимущества дадут прирост любой компании не зависимо от ее масштаба и вида бизнеса.
- client_fact_8: Мы создадим для Вас не просто программу, а мощнейшую маркетинговую машину, замаскированную под мобильное приложение.
- client_product:  Так же предлагаем Вам ознакомиться с готовыми решениями Quick Touch
- client_promo_title: МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
- client_promo_content: Это Ваше преимущество в борьбе за клиента!
- partner_promo_title: ПАРТНЕРАМ
- partner_promo_content: Мы можем работать совместно и взаимовыгодно.
- portfolio_promo_title: ПОРТФОЛИО
- portfolio_promo_content: Каждый проект - это внимательное отношение к деталям.
- partner_block_1: ГАРАНТИРУЕМ КАЧЕСТВО ВЫПОЛНЕННЫХ РАБОТ
- partner_block_2: ВЫ МОЖЕТЕ НАЧАТЬ ЗАРАБАТЫВАТЬ ВМЕСТЕ С НАМИ
- partner_block_3_1: Будем рады сотрудничать как с фирмами, так и с физическими лицами! Рассмотрим Ваши предложения!
- partner_block_3_2: Ждем заявки на dmitrii.malakhov@gmail.com
- partner_block_3_3: С уважением, Малахов Д.И. Quick Touch LLC
+  number:    
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false    
 
+    # Used in number_to_human_size() and number_to_human()
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
 
+      # Used in number_to_human_size()
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
+      # Used in number_to_human()
+      decimal_units:
+        format: "%n %u"
+        units:
+          femto: Квадриллионной
+          pico: Триллион
+          nano: Миллиардный
+          micro: Миллионный
+          mili: Тысячный
+          centi: Сотый
+          deci: Десятый
+          unit: ""
+          # ten:
+          one: Десять
+          other: Десятки
+          hundred: Сто
+          thousand: Тысяча
+          million: Миллион
+          billion: Миллиард
+          trillion: Триллион
+          quadrillion: Квадрильон
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
+  date:
+    formats:
+      long: "%Y-%m-%d"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              invalid: "Неверный формат адреса электронной почты"
+            password:
+              confirmation: " не подтвержден "
+              too_short: " слишком короткий "
+              blank: " поле не может быть пустым "
+    models: 
+      admin_user:
+        one: "Администратор"
+        other: "Администраторы"
+      order:
+        one: "Заказ"
+        other: "Заказы"
+      news:
+        one: "Новость"
+        other: "Новости"
+      project:
+        one: "Проект"
+        other: "Проекты"
+      user:
+        one: "Пользователь"
+        other: "Пользователи"
+      role:
+        one: "Роль"
+        other: "Роли"
+      category:
+        one: "Категория"
+        other: "Категории"
+      region:
+        one: "Регион"
+        other: "Регионы"
+      modifier:
+        one: "Модификатор"
+        other: "Модификаторы"
+      product:
+        one: "Товар"
+        other: "Товары"
+      price:
+        one: "Цена"
+        other: "Цены"
+      notification:
+        one: "Уведомление"
+        other: "Уведомления"
+      location:
+        one: "Место"
+        other: "Места"
+      banner:
+        one: "Баннер"
+        other: "Баннеры"
+      product_image:
+        one: "Изображение"
+        other: "Изображения"
+      location_image:
+        one: "Изображение"
+        other: "Изображения"
+      parser:
+        one: "Парсер"
+        other: "Парсеры"
+    attributes:
+      order:
+        order_amount: "Сумма заказа"
+      category:
+        title: "Заголовок"        
+        created_at: "Создана"
+        updated_at: "Обновлена"
+  active_admin:    
+    dashboard: "Панель управления"
+    dashboard_welcome:
+      welcome: "Добро пожаловать в QuickTouch Admin."
+      call_to_action: ""
+    view: "Открыть"
+    edit: "Изменить"
+    delete: "Удалить"
+    deliver: "Доставить"
+    preview: "Предварительный просмотр"
+    save: "Сохранить"
+    add_price: "Добавить цену"
+    add_product: "Добавить товар"
+    delete_confirmation: "Вы уверены, что хотите удалить это?"
+    new_model: "Создать %{model}"
+    create_model: "Создать %{model}"
+    edit_model: "Изменить %{model}"
+    update_model: "Изменить %{model}"
+    delete_model: "Удалить %{model}"
+    details: "%{model} подробнее"
+    cancel: "Отмена"
+    empty: "Пусто"
+    previous: "Пред."
+    next: "След."
+    download: "Загрузка:"
+    has_many_new: "Добавить %{model}"
+    has_many_delete: "Убрать"
+    has_many_remove: "Удалить"
+    filters:
+      buttons:
+        filter: "Фильтровать"
+        clear: "Очистить"
+      predicates:
+        contains: "Содержит"
+        equals: "="
+        starts_with: "Начинается с"
+        ends_with: "Заканчивается"
+        greater_than: "больше"
+        less_than: "меньше"
+    main_content: "Создайте %{model}#main_content для отображения содержимого."
+    logout: "Выйти"
+    powered_by: "Powered by %{active_admin} %{version}"
+    sidebars:
+      filters: "Фильтры"
+    pagination:
+      empty: "%{model} не найдено"
+      one: "Результат: <b>1</b> %{model}"
+      one_page: "Результат: <b>%{n}</b> %{model}"
+      multiple: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
+      multiple_without_total: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+      entry:
+        one: "запись"
+        other: "записей"
+    any: "Любой"
+    blank_slate:
+      content: "Пока нет %{resource_name}."
+      link: "Создать"
+    batch_actions:
+      button_label: "Групповые операции"
+      delete_confirmation: "Вы уверены, что хотите удалить %{plural_model}? Вы не сможете это отменить."
+      succesfully_destroyed:
+        one: "Успешно удалено: 1 %{model}"
+        few: "Успешно удалено: %{count} %{plural_model}"
+        many: "Успешно удалено: %{count} %{plural_model}"
+        other: "Успешно удалено: %{count} %{plural_model}"
+      selection_toggle_explanation: "(Отметить всё / Снять выделение)"
+      link: "Создать"
+      action_label: "%{title} выбранное"
+      labels:
+        destroy: "Удалить"
+    comments:
+      resource_type: "Тип ресурса"
+      author_type: "Тип автора"
+      body: "Текст"
+      author: "Автор"
+      title: "Комментарий"
+      add: "Добавить Комментарий"
+      resource: "Ресурс"
+      no_comments_yet: "Пока нет комментариев."
+      title_content: "Комментарии (%{count})"
+      errors:
+        empty_text: "Комментарий не сохранен, текст не должен быть пустым."
+    devise:
+      login:
+        title: "Войти"
+        remember_me: "Запомнить меня"
+        submit: "Войти"
+      reset_password:
+        title: "Забыли пароль?"
+        submit: "Сбросить пароль"
+      change_password:
+        title: "Изменение пароля"
+        submit: "Изменение пароля"
+      unlock:
+        title: "Повторно отправить инструкции по разблокировке"
+        submit: "Повторно отправить инструкции по разблокировке"
+      links:
+        sign_in: "Войти"
+        forgot_your_password: "Забыли пароль?"
+        sign_in_with_omniauth_provider: "Войти с помощью %{provider}"
+    access_denied:
+      message: "Вы не авторизованы для выполнения данного действия."
+    index_list:
+      table: "Таблица"
+      block: "Список"
+      grid: "Сетка"
+      blog: "Блог"

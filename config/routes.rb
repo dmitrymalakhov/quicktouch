@@ -1,4 +1,10 @@
 Quicktouch::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
+  mount Ckeditor::Engine => '/ckeditor'
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   resources :products
   resources :applications
   resources :workers
