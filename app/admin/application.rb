@@ -2,6 +2,7 @@ ActiveAdmin.register Application do
 	form do |f|
 	  f.inputs "Details" do # physician's fields
 			f.input :title
+			f.input :photo, :as => :file, :hint => f.template.image_tag(f.object.photo.url(:thumb))
 			f.input :android_link
 			f.input :ios_link
 			f.input :locale
@@ -19,6 +20,9 @@ ActiveAdmin.register Application do
 
 	index do
 		selectable_column
+		column "Image" do |application|
+	      image_tag(application.photo.url(:thumb))
+	    end    
 		column :title
 		column :locale
 		column :android_link
@@ -30,6 +34,9 @@ ActiveAdmin.register Application do
 	show do
 		attributes_table do
 			row :title
+			row "Images" do |application|
+		    	image_tag(application.photo.url(:thumb))
+		 	end
 			row :locale
 			row :android_link
 			row :ios_link
