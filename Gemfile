@@ -1,17 +1,18 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '4.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem "haml"
+
 gem "paperclip", :git => 'git://github.com/thoughtbot/paperclip.git'
 gem "activeadmin", :git => 'https://github.com/gregbell/active_admin.git' #"0.6.2"
 gem 'jquery-rails', "2.3.0"
 gem 'bcrypt-ruby', :git => 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 gem "ckeditor"
+gem "protected_attributes", "~> 1.0.5"
 
 group :development do
 	gem "rspec-rails", "~> 2.12.2"
@@ -35,14 +36,13 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  	gem 'sass-rails',   '~> 3.2.3'
-  	gem "compass", :git => 'git://github.com/chriseppstein/compass.git'
-	gem "compass-rails", "~> 1.0.3"
-	gem 'haml-rails'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-  	gem 'uglifier', '>= 1.0.3'
-  	gem 'turbo-sprockets-rails3'
+	gem "haml", "~> 4.0.5"
+  	gem "sass", "~> 3.2.13"
+ 	gem 'sass-rails', '~> 4.0.1'
+  	gem "compass", "~> 0.12.2"
+	gem "compass-rails", "~> 1.1.3"
+	gem 'haml-rails', '~> 0.5.3'
+ 	gem 'uglifier', '>= 2.4.0'
   end
 
 

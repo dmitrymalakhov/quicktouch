@@ -1,7 +1,5 @@
 Quicktouch::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-
-  mount Ckeditor::Engine => '/ckeditor'
   devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
@@ -11,12 +9,12 @@ Quicktouch::Application.routes.draw do
 
 
   scope "(:locale)", :locale => /en|ru/ do
-    match 'home', :to => 'application#home'
-    match 'client', :to => 'application#client'
-    match 'partner', :to => 'application#partner'
-    match 'contact', :to => 'application#contact'
-    match 'portfolio', :to => 'application#portfolio'
-    match 'appview/:id', :to => 'application#appview'
+    get 'home', :to => 'application#home'
+    get 'client', :to => 'application#client'
+    get 'partner', :to => 'application#partner'
+    get 'contact', :to => 'application#contact'
+    get 'portfolio', :to => 'application#portfolio'
+    get 'appview/:id', :to => 'application#appview'
     
     root :to => 'application#home'
   end

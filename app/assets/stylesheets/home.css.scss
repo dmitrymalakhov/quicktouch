@@ -22,7 +22,6 @@ $height_slide: 363px;
 		   		.slide {
 		   			margin:0 auto;
 				 	height: $height_slide;
-					@include user-select(none);
 					@include background-image(linear-gradient(top,
 						rgba(61,179,59,0) 0%,
 						rgba(61,179,59,0) 20%,
