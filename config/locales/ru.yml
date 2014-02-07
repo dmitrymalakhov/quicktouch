@@ -4,6 +4,7 @@ ru:
   nav_works: ПОРТФОЛИО
   nav_contact: КОНТАКТЫ
   phone: Тел.
+  adress: 'Адрес:'
   nav_client:  КЛИЕНТАМ
   nav_partner: ПАРТНЕРАМ
   slide_title_text: Мобильные приложения
@@ -145,6 +146,12 @@ ru:
       product:
         one: "Товар"
         other: "Товары"
+      worker:
+        one: "Сотрудник"
+        other: "Сотрудники"
+      application:
+        one: "Приложение"
+        other: "Приложения"
       price:
         one: "Цена"
         other: "Цены"

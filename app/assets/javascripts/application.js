@@ -8,3 +8,4 @@
 //= jquery.touchSwipe.min
 //= jquery.transit.min
 //= slider
+//= require ckeditor/override
