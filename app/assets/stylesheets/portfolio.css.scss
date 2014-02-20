@@ -4,71 +4,64 @@
 	.content {
 		padding: 2em 5em 1em 5em;
 
-		table {
+		.items {
 			margin: 0 auto;
-			tr {
+			text-align: center;	
 
-				td:nth-child(even) {
-					width: 25em;
+			.item {
+				margin-bottom: 4px;
+				background: #3cb53a;
+				height: 13em;
+				width: 13em;
+				@include inline-block;
+				padding: 15px 15px 15px 15px;
 
+				.image {
+					text-align: center;
+					padding-top: 10px;
 				}
 
-				td:nth-child(odd) {
-					width: 17em;
-
+				.title {
+					color: #5c4e26;
+					font-size: 20px;
+					padding-top: 10px;
 				}
 
+				.description {
+					color: #c8ffa8;
+					padding: 1em;
+				}
 
-				td {
-					background: #3cb53a;
-					height: 13em;
+				.links {
+					/*padding: 0px 1em 0px 1em;*/
 
-					.image {
+					ul {
+						margin: 0;
+						padding: 0;
 						text-align: center;
-					}
-
-					.title {
-						color: #5c4e26;
-						font-size: 20px;
-						padding: 0em 0em 0em 1em;
-					}
-
-					.description {
-						color: #c8ffa8;
-						padding: 1em;
-					}
-
-					.links {
-						/*padding: 0px 1em 0px 1em;*/
-
-						ul {
-							margin: 0;
-							padding: 0;
+						li {
+							list-style-type: none;
+							@include inline-block;
+							padding: 0.7em 0;
+							background-color: #72b344;
+							width: 8.5em;
 							text-align: center;
-							li {
-								list-style-type: none;
-								@include inline-block;
-								padding: 0.7em 0;
-								background-color: #72b344;
-								width: 8.5em;
-								text-align: center;
-								margin: 0.3em;
+							margin: 0.3em;
 
-								a {
-									text-decoration: none;
-									color: white;
-									font-size: 17px;
-								}
-								a:visited {
+							a {
+								text-decoration: none;
+								color: white;
+								font-size: 17px;
+							}
+							a:visited {
 
-								}
-								a:hover {
-									text-decoration: none;
-								}
 							}
-							li:hover {
-								background-color: #5c4e32;
+							a:hover {
+								text-decoration: none;
 							}
+						}
+						li:hover {
+							background-color: #5c4e32;
 						}
 					}
 				}

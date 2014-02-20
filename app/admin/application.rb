@@ -2,6 +2,7 @@ ActiveAdmin.register Application do
 	form do |f|
 	  f.inputs "Details" do # physician's fields
 			f.input :title
+			f.input :priority
 			f.input :photo, :as => :file, :hint => f.template.image_tag(f.object.photo.url(:thumb))
 			f.input :android_link
 			f.input :ios_link

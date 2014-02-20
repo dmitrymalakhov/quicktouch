@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 	before_filter :set_locale
 
 	def home
-		@applications = Application.where("locale = '#{I18n.locale}'").order("id desc")
+		@applications = Application.where("locale = '#{I18n.locale}' AND priority > 0").order("priority desc")
 	end
 
 	def contact
@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 	end
 
 	def portfolio
-		@applications = Application.where("locale = '#{I18n.locale}'").order("id desc")
+		@applications = Application.where("locale = '#{I18n.locale}' AND priority > 0").order("priority desc")
 	end
 
 	def client
@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
 
 	def appview
 		@application = Application.find(params[:id])
-		@applications = Application.where("locale = '#{I18n.locale}'").order("id desc")
+		@applications = Application.where("locale = '#{I18n.locale}' AND priority > 0").order("priority desc")
 	end
 	
 	private
