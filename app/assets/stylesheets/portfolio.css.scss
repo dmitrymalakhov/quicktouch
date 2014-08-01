@@ -3,7 +3,19 @@
 .wrapper {
 	.content {
 		padding: 2em 5em 1em 5em;
-
+		.promobox {
+			text-align: center;
+			background: url(image-path('wedding.jpg'));
+			@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+			margin-bottom: 15px;
+			.title-promo {
+				color: #5c4e26;
+				font-size: 30px;
+			}
+			.price-promo {
+				font-size: 30px;
+			}
+		}
 		.items {
 			margin: 0 auto;
 			text-align: center;	

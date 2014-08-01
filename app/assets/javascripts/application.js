@@ -1,4 +1,3 @@
-//= common
 //= google-analytic
 //= jquery-1.9.0.min
 //= jquery.ba-throttle-debounce.min
@@ -7,5 +6,6 @@
 //= jquery.prettyPhoto
 //= jquery.touchSwipe.min
 //= jquery.transit.min
+//= common
 //= slider
 //= require ckeditor/override

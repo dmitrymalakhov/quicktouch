@@ -7,7 +7,14 @@
 				= t('portfolio_promo_title')
 			%li.promo_content.text-color-content
 				= t('portfolio_promo_content')
-.items
+.promobox
+	.title-promo
+		Мобильное приложение доставки еды по подписке
+	.price-promo
+		500 рублей/месяц
+	%div
+		= link_to image_tag("more-button.png", :alt => "Приложение доставки за 500р"), product_path(2)
+.items	
 	- @applications.each do |application|
 		.item
 			.image= link_to image_tag(application.photo.url()), :controller => "application", :action => "appview", :id => application.id
