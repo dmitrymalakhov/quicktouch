@@ -10,8 +10,10 @@ $(document).ready(function(){
         var maskHeight = $(document).height();  
         var maskWidth = $(window).width();
 
-        var dialogTop =  174;  
-        var dialogLeft = 420; 
+        // var dialogTop =  174;  
+        // var dialogLeft = 420; 
+        var dialogTop =  (maskHeight/2.2) - ($('#dialog-box').height());  
+        var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
          
         // assign values to the overlay and dialog box
         $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
