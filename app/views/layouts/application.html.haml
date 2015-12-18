@@ -18,6 +18,8 @@
 		= stylesheet_link_tag :prettyPhoto, :media => 'screen'
 	%body
 		:javascript
+			(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34285220 = new Ya.Metrika({ id:34285220, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+		:javascript
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-36932968-1']);
 			_gaq.push(['_trackPageview']);
@@ -27,6 +29,8 @@
 				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+		.div
+			= image_tag("https://mc.yandex.ru/watch/34285220")
 		.wrapper
 			.header
 				.logo
@@ -65,7 +69,7 @@
 
 				.slogan
 			.copyright
-				Copyright QuickTouch LLC, 2013
+				Copyright QuickTouch LLC, 2012 - 2016
 %div#dialog-overlay
 %div#dialog-box
 	= link_to image_tag("qt_delivery_promo.jpg", :alt => "Приложение доставки за 500р"), product_path(2)
